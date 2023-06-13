@@ -1,0 +1,40 @@
+<nav class="navbar">
+
+  <ul class="menu">
+    <li class="menu1"><a routerLink="/listaempleados">Lista empleados</a></li>
+    <li class="menu1"><a routerLink="/listaproductos">Lista productos</a></li>
+    <li><a routerLink=""><img class= "img" src="../../assets/imagenes/png-clipart-texas-longhorn-english-longhorn-longhorn-steakhouse-lone-grove-others-cow-goat-family-logo.png" alt=""></a></li>
+    <li><a routerLink="/addproductos">Agregar productos</a></li>
+    <li><a routerLink="/addempleados">Agregar empleados</a></li>
+
+  </ul>
+</nav>
+
+<div class="container mt-4">
+  <h2>Agregar productos</h2>
+  <form (submit)="guardardatos1()">
+
+    <div class="coolinput mb-3 text-center">
+      <label for="input" class="text">Nombre del producto:</label>
+      <input type="text" [(ngModel)]="productName" name="dato1" class="input">
+    </div>
+
+    <div class="coolinput mb-3 text-center">
+      <label for="input" class="text">Cantidad de productos</label>
+      <input type="text" [(ngModel)]="cantidad" name="dato0" class="input">
+    </div>
+
+    <div class="coolinput mb-3 text-center">
+      <label for="input" class="text">Precio unitario:</label>
+      <input type="text" [(ngModel)]="productPrice" name="dato2" class="input">
+    </div>
+
+    <div class="coolinput mb-3 text-center">
+      <label for="input" class="text">Codigo:</label>
+      <input type="text" [(ngModel)]="codigo" name="dato3" class="input">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>
+</div>
